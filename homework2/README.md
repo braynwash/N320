@@ -12,6 +12,10 @@ After installing node with `npm init`, you can install this module with `npm ins
 
 This tool can be ran using the `index` npm script in Visual Studio Code OR typing `node index.js` in the terminal in the project directory. The terminal will prompt you for a project name- once you finish typing and press the enter key, a new file will be created in an `output` folder in the directory.
 
+## Module link
+
+https://www.npmjs.com/package/sp25-jereblac-cli
+
 # Week recap
 
 In N320 this week, we got deeper insight into Node basics from publically publishing/updating modules to OOP practices uing Node.js.
