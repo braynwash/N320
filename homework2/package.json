@@ -1,12 +1,16 @@
 {
-  "name": "homework2",
+  "name": "sp25-jereblac-cli",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "index": "node index.js"
+    "index": "node bin/index.js"
   },
-  "keywords": [],
+  "bin": {
+    "index": "./bin/index.js"
+  },
+  "keywords": ["cli", "file generator", "node"],
   "author": "Jeremy B",
   "license": "ISC",
-  "description": "This is a basic CLI tool for IU Indianapolis' course N320"
+  "description": "This is a basic CLI tool for IU Indianapolis' course N320."
+  
 }
