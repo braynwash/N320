@@ -1,0 +1,12 @@
+{
+  "name": "homework2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "index": "node index.js"
+  },
+  "keywords": [],
+  "author": "Jeremy B",
+  "license": "ISC",
+  "description": "This is a basic CLI tool for IU Indianapolis' course N320"
+}
