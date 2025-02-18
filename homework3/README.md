@@ -1,0 +1,19 @@
+# Web Server Project
+
+## About
+
+This project is a simple Node.js web server that serves HTML files dynamically based on incoming requests. It includes basic routing logic to serve static pages. The server determines file types and serves the requested content when it's found.
+
+## How to Set Up
+
+Ensure node is installed with `npm init` OR `npm install`.
+
+## How It Works
+
+- The server listens on port `3000` (or a custom port via `process.env.PORT`).
+- Requests for static files (e.g., `/about`) are mapped to corresponding `.html` files inside the `views` directory.
+- If a directory is requested (e.g., `/index`), it serves `index.html` inside that folder.
+
+# Week recap
+
+In N320 this week, we learned how to make an incredibly simple web server and dynamically server content. While it isn't serving it through the URL, it serves a similar purpose using the built-in `path` and `fs` modules to look for specific files and serve them. While this project doesn't use much in the way of APIs, JSON, or Async functions, we also learned how to use the `async` and `await` function calls to respond to and fulfill Promises, allowing operations to run in the background and load when ready instead of the operation refusing to load anything else except the requested assets/materials, keeping the rest of the site from loading properly.
