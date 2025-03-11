@@ -4,11 +4,137 @@
  box-sizing: border-box;
 }
 html, body {
- height: 100%
+ height: 100%;
+ background-color: #fab3b998;
 }
 h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+ margin-bottom: 16px;
 }
+
+h1 {
+    color: #cd4651;
+}
+
+p {
+    font-size: 18px;
+}
+
+table {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 100px;
+}
+
+th {
+    background-color: #e66b75;
+    color: white;
+    font-size: 18px;
+    height: 35px;
+}
+
+td {
+    padding-left: 15px;
+    height: 50px;
+}
+
 table, th, td {
-    border: 1px solid black;
+    border: 2px solid #e66b75;
+    border-collapse: collapse
+  }
+
+  .active {
+    color: #fab3b998;
+  }
+
+  nav {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  nav a {
+    color: #e66b75;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #fab3b998;
+  }
+
+  nav .links {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+
+  nav .logo {
+    margin-left: 25px;
+  }
+
+  #app {
+    margin-top: 50px;
+   
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .button {
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #e66b75;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #e66b75;
+    color: white;
+  }
+
+  table button {
+    background-color: white;
+    border: none;
+    width: 95%;
+    height: 55%;
+    color: #e66b75;
+    border-radius: 10px;
+  }
+
+  table button:hover {
+    cursor: pointer;
+    background-color: #e66b75;
+    color: white;
+  }
+
+  .inputs input {
+    display: block;
+    height: 35px;
+    width: 25%;
+    border: none;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .inputs button {
+    background-color: #e66b75;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 15%;
+  }
+
+  .inputs button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #e66b75;
   }
