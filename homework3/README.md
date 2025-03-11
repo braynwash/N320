@@ -2,17 +2,15 @@
 
 ## About
 
-This project is a simple Node.js web server that serves HTML files dynamically based on incoming requests. It includes basic routing logic to serve static pages. The server determines file types and serves the requested content when it's found.
+This project is a simple Node.js web server that serves HTML files dynamically based on incoming requests. It includes basic routing logic to serve static pages. The server determines file types and serves the requested content when it's found. The server listens on port `3000` (or a custom port via `process.env.PORT`). If a directory is requested (e.g., `/index`), it serves `index.html` inside that folder
 
 ## How to Set Up
 
 Ensure node is installed with `npm init` OR `npm install`.
 
-## How It Works
+## How to Run
 
-- The server listens on port `3000` (or a custom port via `process.env.PORT`).
-- Requests for static files (e.g., `/about`) are mapped to corresponding `.html` files inside the `views` directory.
-- If a directory is requested (e.g., `/index`), it serves `index.html` inside that folder.
+When you're ready to run, simply run `dev` or `start` in NPM Scripts OR type `node server.js` to load the server. You can load the content by typing "localhost:3000" in the search bar.
 
 # Week recap
 
