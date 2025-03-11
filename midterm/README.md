@@ -6,4 +6,4 @@ This is the midterm assignment for N320! It simulates a store webpage where user
 
 ### Repo Link
 
-[Github repo link](link)
+[Github repo link](https://github.com/braynwash/N320/tree/main/midterm)
