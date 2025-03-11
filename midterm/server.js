@@ -14,13 +14,18 @@ function app(req, res) {
   const filePath = path.join(__dirname, "views/", fileReq.filename);
 
   const contentType =
-    fs.existsSync(filePath) && fileReq.getExtension() ? fileReq.getMimeType() : "text/html";
+    fs.existsSync(filePath) && fileReq.getExtension()
+      ? fileReq.getMimeType()
+      : "text/html";
 
   let filePathToUse = "";
 
   if (fs.existsSync(filePath) && fileReq.getExtension()) {
     filePathToUse = filePath;
-  } else if (!fileReq.getExtension() && fs.existsSync(path.join(filePath, "index.html"))) {
+  } else if (
+    !fileReq.getExtension() &&
+    fs.existsSync(path.join(filePath, "index.html"))
+  ) {
     filePathToUse = path.join(filePath, "index.html");
     // if (fs.existsSync(checkHtml)) filePathToUse = checkHtml;
   } else {
@@ -37,6 +42,6 @@ function app(req, res) {
 }
 
 const server = http.createServer(app);
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 server.listen(port);
 console.log(`Server live at http://127.0.0.1:${port}`);

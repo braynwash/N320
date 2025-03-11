@@ -5,7 +5,9 @@
 }
 html, body {
  height: 100%;
- background-color: #fab3b998;
+}
+html {
+    background-color: #fab3b998;
 }
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px;
@@ -124,17 +126,24 @@ table, th, td {
     padding-left: 10px;
   }
 
-  .inputs button {
+  .shopBtn {
     background-color: #e66b75;
     border: none;
     color: white;
     border-radius: 10px;
     height: 30px;
     width: 15%;
+    margin-bottom: 25px;
   }
 
-  .inputs button:hover {
+  .shopBtn:hover {
     cursor: pointer;
     background-color: white;
     color: #e66b75;
   }
+
+  iframe {
+    width: 50%;
+    height: 750px;
+  }
+

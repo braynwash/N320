@@ -12,50 +12,48 @@
             <a href="/">Tay's Treats</a>
         </div>
         <div class="links">
-            <a  href="/">Home</a>
+            <a href="/">Home</a>
             <a class="active" href="shop.html">Shop</a>
             <a href="about.html">About</a>
         </div>
     </nav>
     <div id="app">
         <div class="content">
-<h1>View Our Treats!</h1>
-        <table>
-            <tr>
-              <th>Treat(s)</th>
-              <th>Price</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>Milk Chocolate Truffle Box</td>
-              <td>$14.99</td>
-              <td><button>Add to Cart</button></td>
-            </tr>
-            <tr>
-              <td>Sea Salt Caramels</td>
-              <td>$5.99</td>
-              <td><button>Add to Cart</button></td>
-            </tr>
-          </table>
+            <h1>View Our Treats!</h1>
+            <table>
+                <tr>
+                    <th>Treat(s)</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Milk Chocolate Truffle Box</td>
+                    <td>$14.99</td>
+                    <td><button class="add-to-cart" data-name="Milk Chocolate Truffle Box" data-price="14.99">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Sea Salt Caramels</td>
+                    <td>$5.99</td>
+                    <td><button class="add-to-cart" data-name="Sea Salt Caramels" data-price="5.99">Add to Cart</button></td>
+                </tr>
+            </table>
 
-          <h1>Checkout Info</h1>
-          <div class="inputs">
-            <input type="text" name="name" id="name" placeholder="What's your full name?" required>
-            <input type="email" name="email" id="email" placeholder="What's your email?" required>
+            <h1>Checkout Info</h1>
+            <div class="inputs">
+                <input type="text" name="name" id="name" placeholder="What's your full name?" required>
+                <input type="email" name="email" id="email" placeholder="What's your email?" required>
+                <button class="shopBtn" id="checkout">Checkout</button>
+            </div>
 
-          <button>Checkout</button>
-          </div>
-          
+            <button class="shopBtn" id="downloadPdf" style="display:none;">Download Invoice</button>
 
-          <button id="downloadPdf" style="display:none;">Download Certificate</button>
-      
-      <section>
-          <iframe id="pdf-preview" frameborder="0"></iframe>
-      </section>
+            <section>
+                <iframe style="display: none;" id="pdf-preview" frameborder="0"></iframe>
+            </section>
         </div>
-        
     </div>
-    
+
+    <script type="module" src="app/invoicePDFGenerator.js"></script>
     <script type="module" src="app/shop.js"></script>
 </body>
 </html>
