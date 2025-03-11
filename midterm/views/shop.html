@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tay's Treats</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div id="app">
+        <h1>View Our Treats!</h1>
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td><button>Add to Cart</button></td>
+            </tr>
+          </table>
+
+          <input type="text" name="name" id="name" placeholder="What's your full name?" required>
+          <input type="email" name="email" id="email" placeholder="What's your email?" required>
+
+          <button>Buy now</button>
+
+          <button id="downloadPdf" style="display:none;">Download Certificate</button>
+      
+      <section>
+          <iframe id="pdf-preview" frameborder="0"></iframe>
+      </section>
+    </div>
+    
+    <script type="module" src="app/shop.js"></script>
+</body>
+</html>
